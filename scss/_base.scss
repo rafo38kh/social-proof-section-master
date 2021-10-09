@@ -1,0 +1,33 @@
+$color-primary: hsl(333, 80%, 67%);
+$color-primary--light: hsl(303, 10%, 53%);
+$color-primary--dark: hsl(300, 43%, 22%);
+$color-secondary: hsl(300, 24%, 96%);
+$color-secondary--light: hsl(0, 0%, 100%);
+
+$font-primary: "Spartan", sans-serif;
+
+// Very Dark Magenta: hsl(300, 43%, 22%)
+// Soft Pink: hsl(333, 80%, 67%)
+
+// ### Neutral
+
+// Dark Grayish Magenta: hsl(303, 10%, 53%)
+// Light Grayish Magenta: hsl(300, 24%, 96%)
+// White: hsl(0, 0%, 100%)
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
