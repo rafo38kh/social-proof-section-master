@@ -10,6 +10,7 @@ html {
   box-sizing: border-box; }
 
 body {
+  min-height: 100vh;
   font-size: 1.6rem;
   background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
   background-position: top, bottom;
@@ -20,16 +21,30 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  @media (min-width: 900px) {
+    body {
+      background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+      background-size: 40%, 30%;
+      background-position: top -23% left -9%, bottom right -80%; } }
+  @media (min-width: 1140px) {
+    body {
+      background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+      background-size: 50%, 80%;
+      background-position: top -23% left -9%, bottom right -30%; } }
 
 .container {
   width: 90%;
   max-width: 400px; }
+  @media (min-width: 900px) {
+    .container {
+      max-width: 700px; } }
   @media (min-width: 1140px) {
     .container {
-      max-width: 1200px; } }
+      max-width: 1100px; } }
 
 .content {
-  padding: 1rem 1rem; }
+  padding: 1rem;
+  margin: 7rem 0; }
   .content__wrapper {
     text-align: center; }
     @media (min-width: 1140px) {
@@ -37,25 +52,34 @@ body {
         display: flex; } }
   @media (min-width: 1140px) {
     .content__text {
-      width: 50%; } }
+      width: 50%;
+      padding: 0 5rem;
+      padding-left: 0;
+      text-align: left; } }
   .content__heading {
     color: #502050;
-    padding: 0 2rem;
+    padding: 0 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-weight: 700;
-    font-size: 2.95rem;
-    line-height: 3rem; }
+    font-size: 3rem;
+    line-height: 5rem; }
+    @media (min-width: 1140px) {
+      .content__heading {
+        font-size: 4.5rem;
+        padding: 0; } }
   .content__paragraph {
     color: #937b92;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.5rem; }
-  .content__reviews {
-    margin: 5rem 0; }
     @media (min-width: 1140px) {
-      .content__reviews {
-        width: 50%; } }
+      .content__paragraph {
+        padding-right: 7rem; } }
+  @media (min-width: 1140px) {
+    .content__reviews {
+      width: 50%;
+      padding-top: 2rem; } }
   .content__review {
     background-color: #f7f2f7;
     margin-bottom: 2rem;
@@ -64,9 +88,14 @@ body {
     @media (min-width: 1140px) {
       .content__review {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 70%; } }
+        width: 80%;
+        padding: 1.7rem 4rem; }
+        .content__review-second {
+          transform: translateX(5.5rem); }
+        .content__review-third {
+          transform: translateX(10.5rem); } }
   .content__stars {
     padding-bottom: 1rem; }
     @media (min-width: 1140px) {
@@ -79,17 +108,29 @@ body {
     color: #502050;
     font-size: 1.3rem;
     font-weight: 700; }
-  @media (min-width: 1440px) {
-    .content__cards {
-      display: flex; } }
+  .content__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 7rem; }
+    @media (min-width: 900px) {
+      .content__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; } }
+    @media (min-width: 1440px) {
+      .content__cards {
+        flex-direction: row;
+        gap: 2rem; } }
   .content__card {
     background-color: #502050;
-    margin-bottom: 2rem;
     border-radius: 1rem;
     padding: 3rem; }
     @media (min-width: 1140px) {
-      .content__card {
-        margin-right: 1rem; } }
+      .content__card-second {
+        transform: translateY(2rem); }
+      .content__card-third {
+        transform: translateY(4rem); } }
     .content__card-author {
       display: flex;
       justify-content: flex-start;
@@ -110,15 +151,17 @@ body {
     opacity: 0.7; }
   .content__message {
     color: #f7f2f7;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 2.3rem; }
-  .content .attribution {
-    color: #000;
-    font-size: 1rem;
-    text-align: center;
-    margin: 2rem 0 1rem 0; }
-    .content .attribution__link:link, .content .attribution__link:visited {
-      text-transform: uppercase;
-      transition: all 0.2s; }
-    .content .attribution__link:hover, .content .attribution__link:active {
-      color: #ee68a4; }
+
+.attribution {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0 0 0; }
+  .attribution__link:link, .attribution__link:visited {
+    color: #937b92;
+    text-transform: uppercase;
+    transition: all 0.2s; }
+  .attribution__link:hover, .attribution__link:active {
+    color: #ee68a4; }
