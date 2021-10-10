@@ -1,6 +1,6 @@
 # Frontend Mentor - Social-Proof-Section-Master Solution
 
-This is a solution to the [Social-Proof-Section-Master Challenge on Frontend Mentor]({LINK})
+This is a solution to the [Social-Proof-Section-Master Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
 
 ## Table of contents
 
@@ -16,7 +16,9 @@ This is a solution to the [Social-Proof-Section-Master Challenge on Frontend Men
 
 ### The challenge
 
-- {CHALLANGE}
+Users should be able to:
+
+- View the optimal layout for the section depending on their device's screen size
 
 ### Screenshot
 
