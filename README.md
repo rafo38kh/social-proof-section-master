@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-with-scss-bem-and-css-flexbox-XiUyK2FDK](https://www.frontendmentor.io/solutions/social-proof-section-with-scss-bem-and-css-flexbox-XiUyK2FDK)
 - Live Site URL: [https://rafo38kh.github.io/social-proof-section-master/](https://rafo38kh.github.io/social-proof-section-master/)
 
 ## My process

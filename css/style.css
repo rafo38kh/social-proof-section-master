@@ -153,3 +153,15 @@ body {
     color: #f7f2f7;
     font-size: 1.25rem;
     line-height: 2.3rem; }
+
+.attribution {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0; }
+  .attribution__link:link, .attribution__link:visited {
+    color: #937b92;
+    text-transform: uppercase;
+    transition: all 0.2s; }
+  .attribution__link:hover, .attribution__link:active {
+    color: #ee68a4; }
